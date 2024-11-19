@@ -1,0 +1,19 @@
+.bottom-container {
+  width: 1200px;
+  display: flex;
+  .box3 {
+    width: 600px;
+    border: 1px solid rgba(66, 86, 122, 1);
+    height: 389px;
+    border-top: 0;
+    border-left: 0;
+  }
+  .box4 {
+    width: 600px;
+    border: 1px solid rgba(66, 86, 122, 1);
+    height: 389px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+}
