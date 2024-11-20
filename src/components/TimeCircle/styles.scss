@@ -1,0 +1,15 @@
+.circle {
+  position: absolute;
+  border: 1px solid rgba(66, 86, 122, 0.2);
+  width: 430px;
+  height: 430px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 300px; 
+    height: 300px;
+  }
+}

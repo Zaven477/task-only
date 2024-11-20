@@ -1,0 +1,30 @@
+.historical-dates-border {
+  position: absolute;
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, #3877ee -5%, #ef5da8 85%);
+  border-image-slice: 1;
+  height: 120px;
+  top: 15%;
+
+  @media (max-width: 768px) {
+    height: 80px;
+    top: 16%;
+  }
+}
+
+.text {
+  color: black;
+  position: absolute;
+  top: 14%;
+  left: 5%;
+  font-size: 56px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 353px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    left: 10%;
+    top: 20%;
+  }
+}

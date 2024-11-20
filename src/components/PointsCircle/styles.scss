@@ -1,0 +1,65 @@
+.left-point {
+  position: absolute;
+  border: 1px solid rgba(66, 86, 122, 1);
+  width: 6px;
+  height: 6px;
+  background: black;
+  top: 49%;
+  left: 31.7%;
+  border-radius: 50%;
+}
+
+.right-point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(66, 86, 122, 1);
+  background: black;
+  top: 49%;
+  left: 67.5%;
+  border-radius: 50%;
+}
+
+.top-left {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(66, 86, 122, 1);
+  background: black;
+  top: 25%;
+  left: 41.2%;
+  border-radius: 50%;
+}
+
+.top-right {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(66, 86, 122, 1);
+  background: black;
+  top: 25%;
+  left: 58%;
+  border-radius: 50%;
+}
+
+.bottom-left {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(66, 86, 122, 1);
+  background: black;
+  top: 74%;
+  left: 41.1%;
+  border-radius: 50%;
+}
+
+.bottom-right {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(66, 86, 122, 1);
+  background: black;
+  top: 74%;
+  left: 58.2%;
+  border-radius: 50%;
+}
