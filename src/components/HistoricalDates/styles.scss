@@ -1,12 +1,9 @@
 .container {
-  width: 100%;
   max-width: 1200px;
-  border: 1px solid rgba(66, 86, 122, 0.1);
+  border: 1px solid rgba(66, 86, 122);
   margin: 0 auto;
-  height: 775px;
-  position: relative;
-
-  @media (max-width: 768px) {
-    height: auto;
-  }
+  min-height: 100vh; //100vh - то есть занимает всю высоту окна устройства(применяется при адаптиве)
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

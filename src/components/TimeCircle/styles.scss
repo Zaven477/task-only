@@ -1,15 +1,98 @@
 .circle {
-  position: absolute;
   border: 1px solid rgba(66, 86, 122, 0.2);
   width: 430px;
   height: 430px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
+  position: relative; //указал relative для того чтобы точки которые лежат на окружности при адаптиве не смещались
 
-  @media (max-width: 768px) {
-    width: 300px; 
+  .left-point {
+    position: absolute; // точки лежат как дочерные элементы для сircle, потому что так удобно адаптировать под мобильные устройства
+    border: 1px solid;  // абсолютное позиционирование применил для того чтобы на точки не смещались при адаптиве
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    top: 50%; // 50% от высоты окружности
+    right: 99.2%;
+  }
+
+  .right-point {
+    position: absolute;
+    border: 1px solid;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 99.2%;
+  }
+
+  .top-left-point {
+    position: absolute;
+    border: 1px solid;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    top: 5%;
+    left: 25%;
+  }
+
+  .top-right-point {
+    position: absolute;
+    border: 1px solid;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    top: 5%;
+    left: 72.5%;
+  }
+
+  .bottom-left-point {
+    position: absolute;
+    border: 1px solid;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    top: 93%;
+    left: 25%;
+  }
+
+  .bottom-right-point {
+    position: absolute;
+    border: 1px solid;
+    width: 6px;
+    height: 6px;
+    background: black;
+    border-radius: 50%;
+    top: 93%;
+    left: 73%;
+  }
+
+  @media (max-width: 768px) {   //до 768px -  то есть все ширины окна мобильных устройств
+    width: 300px;
     height: 300px;
+
+    .left-point {    //можно было и не применить в данном случае медиа запросы для точек, потому что они практически не смещаются
+      right: 98.9%;   //если и смещаются, то совсем минимально и не заметно
+    }
+
+    .right-point {
+      left: 98.7%;
+    }
+
+    .top-left-point {
+      left: 24%;
+    }
+
+    .top-right-point {
+      left: 72.7%;
+    }
+    
+    .bottom-right-point {
+      left: 72%;
+    }
   }
 }

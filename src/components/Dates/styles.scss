@@ -1,0 +1,30 @@
+.container-dates {
+  display: flex;
+  gap: 140px;
+  position: absolute;
+
+  @media (max-width: 768px) {
+    gap: 70px;
+  }
+}
+
+.start-date {
+  color: #cd5c5c;
+  font-size: 200px;
+}
+
+.end-date {
+  color: #1e90ff;
+  font-size: 200px;
+}
+
+.start-date,
+.end-date {
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media (min-width: 769px) and (max-width: 940px) {
+    font-size: 100px;
+  }
+}
